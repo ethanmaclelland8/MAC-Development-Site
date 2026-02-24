@@ -436,7 +436,7 @@ function HomePage({ setPage, mob }) {
           {/* Stats row */}
           <div className="fis" style={{ animationDelay: "0.4s", display: "flex", gap: mob ? 20 : 48, flexWrap: "wrap" }}>
             {[
-              { num: "5+", label: "Properties Renovated" },
+              { num: "4+", label: "Properties Renovated" },
               { num: "$2M+", label: "Projects Delivered" },
               { num: "0%", label: "Portfolio Vacancy" },
               { num: "24/7", label: "Emergency Service" },

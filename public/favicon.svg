@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+  <rect width="52" height="52" rx="10" fill="#161B22"/>
+  <rect x="1" y="1" width="50" height="50" rx="9" stroke="#4A8EC2" stroke-width="0.5" opacity="0.2"/>
+  <text x="26" y="24" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="15" fill="#E6EDF3">MAC</text>
+  <line x1="14" y1="30" x2="38" y2="30" stroke="#4A8EC2" stroke-width="0.6" opacity="0.3"/>
+  <text x="26" y="39" text-anchor="middle" font-family="sans-serif" font-weight="400" font-size="6" fill="#9BA4B0" opacity="0.8">DEVELOPMENT</text>
+</svg>

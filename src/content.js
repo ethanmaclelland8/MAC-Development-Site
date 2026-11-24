@@ -5,15 +5,15 @@
    • To hide something, set it to "" (empty quotes).
    • To add an item to a list, copy an existing { ... } block,
      paste it below, and change the text. Keep the commas.
-   • Save the file on GitHub ("Commit changes") and the live site
+   • Save the file on GitHub ("Commit changes") and mac-dev.co
      updates by itself in about a minute.
    ═══════════════════════════════════════════════════════════════ */
 
 /* ── LOOK ────────────────────────────────────────────────────────
-   Pick one:  "clean"  "fieldstone"  "navy"
+   Pick one:  "bright"  "sage"  "graphite"
    To preview a look without changing it, add ?look=NAME to the
-   address, e.g.  mdco.homes/?look=fieldstone                      */
-export const THEME = "clean";
+   address, e.g.  mac-dev.co/?look=sage                              */
+export const THEME = "bright";
 
 /* ── COMPANY ─────────────────────────────────────────────────── */
 export const COMPANY = {
@@ -44,15 +44,8 @@ export const CONTACT = {
 /* ⚠ VERIFY every value here before publishing — tenants send money
    to exactly what's shown. Set any method to "" to hide it.        */
 export const PAYMENTS = {
-  // Online rent platform (Baselane, TurboTenant, etc.).
-  // Paste the tenant login / pay link from your platform. While this
-  // is "", the "Pay online" option is hidden.
-  online: {
-    url: "",
-    details: "Pay by bank transfer or card, set up autopay, and get a receipt every time.",
-    fees: "",                                    // e.g. "Bank transfer: free. Card: 3.49%."
-  },
-
+  // Bank (ACH) payments through the website are set up in config.js.
+  // These are the other ways residents can pay:
   zelle: "macdevelopment",                       // Zelle email, phone, or tag
   venmo: "@ethandm8",
 
@@ -133,12 +126,4 @@ export const PROPERTIES = [
     summary:
       "A 1935 stone church converted into a four-bedroom, two-bath home. The original masonry stays; everything behind the walls is new — electrical, plumbing, and HVAC — with custom solid-wood cabinetry and reclaimed mansion doors.",
   },
-];
-
-/* ── FILES ───────────────────────────────────────────────────── */
-/* Upload the file to the  public/files/  folder on GitHub, then add a
-   line here. "file" must match the file name exactly. While this list
-   is empty, the Files page is hidden.                               */
-export const FILES = [
-  // { name: "Move-In Checklist", file: "move-in-checklist.pdf", date: "2026-12-01" },
 ];

@@ -1,16 +1,34 @@
-# React + Vite
+# MAC Development Co. website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live at **mdco.homes**. Hosted on GitHub Pages — every change saved to `main` publishes automatically in about a minute (see the **Actions** tab).
 
-Currently, two official plugins are available:
+## Updating the site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Almost everything is in **`src/content.js`**. On GitHub: open the file → pencil icon → edit → **Commit changes**.
 
-## React Compiler
+| To change… | Edit in `src/content.js` |
+| --- | --- |
+| The look (clean / fieldstone / navy) | `THEME` |
+| Phone, email, mailing address | `CONTACT` |
+| Zelle, Venmo, check details, online pay link | `PAYMENTS` |
+| Home page headline and text | `HOME`, `SERVICES` |
+| The houses, and which one is available | `PROPERTIES` |
+| Downloadable files | Upload to `public/files/`, then add a line to `FILES` |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Preview a different look without changing anything: add `?look=fieldstone` (or `clean`, `navy`) to the address.
 
-## Expanding the ESLint configuration
+Direct links for tenants: `mdco.homes/#pay`, `mdco.homes/#contact`, `mdco.homes/#properties/887`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Files
+
+- `src/content.js` — all text and settings
+- `src/styles.css` — the three looks (colors and fonts at the top) and layout
+- `src/App.jsx` — page structure; rarely needs editing
+- `package-lock.json` — required for the deploy; don't delete it
+
+## Running it on your computer (optional)
+
+```
+npm install
+npm run dev
+```

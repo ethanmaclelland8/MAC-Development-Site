@@ -1,0 +1,7 @@
+# Stripe calls the webhook without a Supabase login, so it must not require one.
+# (It checks Stripe's signature instead.)
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.create-checkout]
+verify_jwt = true
